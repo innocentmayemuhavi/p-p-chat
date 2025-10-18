@@ -79,7 +79,7 @@ const Input = styled.input`
 
 const Button = styled.button`
   padding: 0.875rem;
-  background: ${COLORS.PRIMARY};
+  background: ${COLORS.BUTTON_BG};
   color: white;
   border: none;
   border-radius: 8px;
@@ -116,6 +116,14 @@ const StyledLink = styled(Link)`
 
   &:hover {
     text-decoration: underline;
+  }
+`;
+
+export const StyledImage = styled.div`
+  display: flex;
+  justify-content: center;
+  img {
+    height: 100px;
   }
 `;
 
@@ -175,6 +183,9 @@ const SignupPage = () => {
   return (
     <Container>
       <FormCard>
+        <StyledImage>
+          <img src="/images/logo.png" alt="Logo" />
+        </StyledImage>
         <Title>Create Account</Title>
         <Subtitle>Join us and start chatting</Subtitle>
 

@@ -43,6 +43,7 @@
   --white-transparent: rgba(255, 255, 255, 0.8);
   --danger: #e74c3c;
   --danger-light: #fee;
+  --primary-btn: #6e80a4;
 
   color: var(--dark-text);
 }

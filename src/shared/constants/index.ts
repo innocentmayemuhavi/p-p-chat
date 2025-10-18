@@ -21,6 +21,7 @@ export const COLORS = {
     ERROR: 'var(--error)',
     MAIN_BG: 'var(--main-bg)',
     SENDER_BG: 'var(--sender-card-bg)',
+    BUTTON_BG: 'var(--primary-btn)',
 
 };
 

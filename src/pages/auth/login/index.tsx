@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { authAPI } from "../../../services/api";
 import toast from "react-hot-toast";
 import { COLORS, ROUTES } from "../../../shared/constants";
+import { StyledImage } from "../signup";
 
 const Container = styled.div`
   display: flex;
@@ -79,7 +80,7 @@ const Input = styled.input`
 
 const Button = styled.button`
   padding: 0.875rem;
-  background: ${COLORS.PRIMARY};
+  background: ${COLORS.BUTTON_BG};
   color: white;
   border: none;
   border-radius: 8px;
@@ -152,6 +153,9 @@ const LoginPage = () => {
   return (
     <Container>
       <FormCard>
+        <StyledImage>
+          <img src="/images/logo.png" alt="Logo" />
+        </StyledImage>
         <Title>Welcome Back</Title>
         <Subtitle>Sign in to continue chatting</Subtitle>
 

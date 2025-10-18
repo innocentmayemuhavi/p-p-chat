@@ -372,6 +372,7 @@ const ChatWindow = () => {
   const typingTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const activeUser = activeChat ? chats.get(activeChat)?.participant : null;
+  console.info("Rendering ChatWindow for activeChat:", activeUser);
   const messages = activeChat ? chats.get(activeChat)?.messages || [] : [];
 
   useEffect(() => {
@@ -615,7 +616,7 @@ const ChatWindow = () => {
               </InfoItem>
 
               <InfoItem>
-                <InfoValue>{activeUser.mobile || "Not provided"}</InfoValue>
+                <InfoValue>{activeUser.mobileNumber || "Not provided"}</InfoValue>
               </InfoItem>
             </InfoSection>
             <ProfileStatus isOnline={activeUser.isOnline}>

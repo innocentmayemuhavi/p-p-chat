@@ -4,7 +4,7 @@ export interface UserFace {
     id: string;
     name: string;
     email: string;
-    mobile: string;
+    mobileNumber: string;
     isOnline: boolean;
     avatarUrl: string;
     lastActive?: Date;
