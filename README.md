@@ -340,11 +340,4 @@ npm run lint
 - **Mobile-friendly**: Better for mobile apps
 - **Long-lived**: 30-day expiration reduces login friction
 
-## 🐛 Known Limitations
 
-1. **In-memory storage**: Data lost on server restart
-2. **No encryption**: Messages not end-to-end encrypted (should add in production)
-3. **No file sharing**: Text messages only
-4. **No group chats**: One-to-one messaging only
-5. **No message history**: Messages only visible in current session
-6. **No read receipts**: Can't see if message was read
