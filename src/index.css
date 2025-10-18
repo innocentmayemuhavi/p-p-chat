@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  font-family: "Quicksand";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Color Variables */
+  --primary: #7c3aed;
+  --primary-light: #a78bfa;
+  --secondary: #10b981;
+  --background: #f9fafb;
+  --white: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --border: #d9dce0;
+  --online-green: #15cf74;
+  --error: #ef4444;
+  --sender-card-bg: #6290eb;
+  --main-bg: #f6f6f6;
+
+  /* Additional Colors */
+  --dark-bg: #242424;
+  --dark-text: rgba(255, 255, 255, 0.87);
+  --link-color: #646cff;
+  --link-hover: #535bf2;
+  --button-bg: #1a1a1a;
+  --light-text: #213547;
+  --light-bg: #ffffff;
+  --light-link-hover: #747bff;
+  --light-button-bg: #f9f9f9;
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-medium: rgba(0, 0, 0, 0.07);
+  --shadow-strong: rgba(0, 0, 0, 0.1);
+  --white-transparent: rgba(255, 255, 255, 0.8);
+  --danger: #e74c3c;
+  --danger-light: #fee;
+
+  color: var(--dark-text);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--link-hover);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--link-color);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--light-text);
+    background-color: var(--light-bg);
+  }
+  a:hover {
+    color: var(--light-link-hover);
+  }
+  button {
+    background-color: var(--light-button-bg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
